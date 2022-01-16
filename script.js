@@ -145,7 +145,7 @@ function buyButtonClick(event, data) {
     const clickedId = elementClickedOn.id;
     const clickedIdStr = clickedId.split("_").slice(1).join("_");
     if (canAffordProducer(data, clickedIdStr) === false) {
-      window.alert("Not enough coffee!");
+      window.alert("You’ve bean overeager! You better grind a little harder before you java chance to afford that.");
     } else {
       attemptToBuyProducer(data, clickedIdStr);
       updateCoffeeView(data.coffee);
